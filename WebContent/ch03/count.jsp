@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>접속할 때 마다 증가</title>
+</head>
+<body>
+<h1>접속 할 때마다 증가한다 F5번 눌러보기</h1>
+<%! int globalCount = 0; %>
+<% int localCount = 0; %>
+<%
+	globalCount++;
+	localCount++;
+%>
+globalCount = <%= globalCount %>
+localCount = <%= localCount %>
+</body>
+</html>
